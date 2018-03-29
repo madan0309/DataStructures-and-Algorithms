@@ -20,7 +20,8 @@ def quick_sort(A, low, high):
         pivot = partition(A, low, high)
         quick_sort(A, low, pivot-1)
         quick_sort(A, pivot+1, high)
+        
 A = [534,246,933, 127,277,321,454,565,220, 230]
+print("Given Array ",A)
 quick_sort(A, 0, len(A)-1)
-print("Final")
-print(A)
+print("Sorted Array ",A)
